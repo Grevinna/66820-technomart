@@ -1,4 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
-<!-- Техномарт -->
+  <head>
+    <!-- Техномарт --><!-- Пока оставила теги <b> -->
+    <meta charset="utf-8">
+    <title>Техномарт</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container-header">
+        <div class="panel"> 
+          <div class="index-logo">
+            <img src="img/index-logo.png" width="60" height="20" alt="Техномарт"> <!--+ к вн стр <a href="#">Техномарт</a>-->
+          </div>
+          <div class="search"><!-- Поиск, надеюсь пока этого хватит, немного теряюсь, как лучше сделать -->
+            <form>
+              <input type="search" placeholder="Поиск:">
+              <button type="submit" class="btn-search"></button>
+            </form>
+          </div>
+          <div class="btn-bookmars">
+            <a class="btn bookmars" href="#">Закладки: 0</a>
+          </div>   
+          <div class="btn-cart">
+            <a class="btn cart" href="#">Корзина: 0</a>
+          </div>
+          <div class="btn-order">
+          <a class="btn order" href="#">Оформить заказ</a>
+          </div>
+        </div> 
+        <b class="caption">Интернет-магазин строительных материалов и инструментов для ремонта</b>  
+        <!-- Контакты -->
+        <div class="contacts"> 
+          <div class="phone-number">
+            +7(812)555-0555
+          </div>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>  
+        </div>
+        <!-- ЛК -->   <!-- Переделать на активный -->
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+        <div class="first-user-block">
+          <a class="check-in" href="#">Регистрация</a>
+        </div>
+        <!-- Навигация -->
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Компания</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Спецпредложения</a>
+            </li>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>    
+      </div>
+    </header> 
+    <!-- Тело страницы -->
+    <main class="container">
+      <section class="">
+        
+      </section> 
+    </main>
+    <!-- Футер --><!-- В футере изменен порядок элементов, для удобства восприятия разметки, при необходимости- сменить -->
+    <footer class="main-footer">
+      <div class="index-logo">
+        <a href="#">
+          <img src="img/index-logo.png" width="60" height="20" alt="Техномарт"><!-- логотип Техномарт -->
+        </a>
+      </div>
+      <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p><!-- бр или разделить и обернуть в див? -->
+      <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; Все права защищены</p><!-- бр или разделить и обернуть в див? -->
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="mail">
+        <p>Обратная связь:</p>
+        <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
+      </section>
+      <section class="author-copyright">
+        <p>Разработано-</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a><!-- разработано -->
+      </section>
+      <!-- Навигация по сайту в футере-->
+      <nav class="footer-navigation">
+        <ul>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Навигация по типам товаров в футере-->
+      <nav class="footer-navigation-goods">
+        <ul>
+          <li>
+            <a href="#">Материалы</a>
+          </li>
+          <li>
+            <a href="#">Техника</a>
+          </li>
+          <li>
+            <a href="#">Инструмент</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

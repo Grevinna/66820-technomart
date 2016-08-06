@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Техномарт -->
+    <!-- Техномарт --><!-- Пока оставила теги <b> -->
     <meta charset="utf-8">
     <title>Техномарт</title>
   </head>
@@ -10,14 +10,19 @@
       <div class="container-header">
         <div class="panel"> 
           <div class="index-logo">
-            <p>Техномарт</p> <!-- или <img src="img/index-logo.png" width="60" height="20" alt="Техномарт"> + к вн стр <a href="#">Техномарт</a>-->
+            <img src="img/index-logo.png" width="60" height="20" alt="Техномарт"> <!--+ к вн стр <a href="#">Техномарт</a>-->
           </div>
-          <div class="search">Поиск</div><!-- Пока не знаю, как правильно сделать? не помню и не смотрела -->
+          <div class="search"><!-- Поиск, надеюсь пока этого хватит, немного теряюсь, как лучше сделать -->
+            <form>
+              <input type="search" placeholder="Поиск:">
+              <button type="submit" class="btn-search"></button>
+            </form>
+          </div>
           <div class="btn-bookmars">
-            <a class="btn bookmars" href="#">Закладки:0</a><!-- не знаю, как сделать так, чтобы количество отображалось -->
+            <a class="btn bookmars" href="#">Закладки: 0</a>
           </div>   
           <div class="btn-cart">
-            <a class="btn cart" href="#">Корзина:0</a><!-- не знаю, как сделать так, чтобы количество отображалось -->
+            <a class="btn cart" href="#">Корзина: 0</a>
           </div>
           <div class="btn-order">
           <a class="btn order" href="#">Оформить заказ</a>
@@ -26,7 +31,9 @@
         <b class="caption">Интернет-магазин строительных материалов и инструментов для ремонта</b>  
         <!-- Контакты -->
         <div class="contacts"> 
-          <img src="img.jpg" alt="" width="" height=""><!-- вырезать телефон из макета, или делать див со спрайтом? <div class="phone-number"> -->
+          <div class="phone-number">
+            +7(812)555-0555
+          </div>
           <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>  
         </div>
         <!-- ЛК -->   
@@ -64,80 +71,120 @@
         </nav>    
       </div>
     </header> 
+    <!-- Тело страницы -->
     <main class="container">
       <section class="features">
         <div class="features-item materials">
           <b class="features-name">Материалы</b>
           <a href="#">На любой вкус</a>
-          <!-- Значек new будет отдельным? -->
-          <!-- Картинку вставить или в CSS фоном сделать? -->
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- new -->
+          </div>
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- иконка -->
+          </div>
         </div>
           <div class="features-item tool">
           <b class="features-name">Инструмент</b>
           <a href="#">На все случаи</a>
-          <!-- Картинку вставить или в CSS фоном сделать? -->
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- иконка -->
+          </div>
         </div>
           <div class="features-item equipment">
           <b class="features-name">Техника</b>
           <a href="#">Для стройки</a>
-          <!-- Картинку вставить или в CSS фоном сделать? -->
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- иконка -->
+          </div>
         </div>
           <div class="features-item discounts">
           <b class="features-name">Скидки 50%</b>
           <a href="#">На 350 товаров</a>
-          <!-- Картинку вставить или в CSS фоном сделать? -->
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- иконка -->
+          </div>
         </div>
           <div class="features-item delivery">
           <b class="features-name">Доставка</b>
           <a href="#">Бесплатно</a>
-          <!-- Картинку вставить или в CSS фоном сделать? -->
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- иконка -->
+          </div>
         </div>
         <div class="slider">
           <b class="slider-name">Перфораторы</b>
           <p>Настоящие мужские игрушки</p>
-          <a href="#">Открыть каталог</a>
-          <!-- В слайдере только одна картинка? -->
+          <div>
+            <a href="#">Открыть каталог</a>
+          </div>
+          <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- фоновая картинка -->
+          </div><!-- В слайдере только одна картинка? -->
         </div> 
       </section>
+      <!-- Блок товаров -->
       <section class="goods">
         <div class="popular-goods">
           <b class="popular-goods-name">Популярные товары:</b>
-          <a href="#">Все популярные товары</a><!-- Стоит обернуть в <div>? -->
+          <div> 
+            <a href="#">Все популярные товары</a>
+          </div>
         </div>
         <div class="goods-list">
           <div class="goods-item">
-            <img src="img.jpg" alt="" width="" height="">
+            <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- фото перфоратора -->
+            </div>
             <b>Перфоратор Bosch BFG 9000</b>
             <del class="price-before">32500 р.</del>
-            <a class="btn price-after" href="#">25500 р.</a>
+            <div>
+              <a class="btn price-after" href="#">25500 р.</a>
+            </div>
           </div>
-           <div class="goods-item">
-            <img src="img.jpg" alt="" width="" height="">
+          <div class="goods-item">
+            <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- фото перфоратора -->
+            </div>
             <b>Перфоратор Bosch BFG 3000</b>
             <del class="price-before">22500 р.</del>
-            <a class="btn price-after" href="#">15500 р.</a>
+            <div>
+              <a class="btn price-after" href="#">15500 р.</a>
+            </div>
           </div>
-           <div class="goods-item">
-            <img src="img.jpg" alt="" width="" height="">
+          <div class="goods-item">
+            <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- фото перфоратора -->
+            </div>
             <b>Перфоратор Bosch BFG 6000</b>
             <del class="price-before">30500 р.</del>
-            <a class="btn price-after" href="#">25500 р.</a>
+            <div>  
+             <a class="btn price-after" href="#">25500 р.</a>
+            </div>
           </div>
-           <div class="goods-item">
-            <img src="img.jpg" alt="" width="" height="">
+          <div class="goods-item">
+            <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- фото перфоратора -->
+            </div>
             <b>Перфоратор Bosch BFG 2000</b>
-            <a class="btn price-after" href="#">12500 р.</a>
-            <!-- Значек new будет отдельным? -->
+            <div>  
+             <a class="btn price-after" href="#">12500 р.</a>
+            </div>
+            <div>
+              <img src="img.jpg" alt="" width="" height=""><!-- new -->
+            </div>
           </div>
         </div>
       </section>
+      <!-- Блок производителей -->
       <section class="manufakturers">
         <div class="popular-manufakturers">
           <b class="popular-manufakturers-name">Популярные производители:</b>
-          <a href="#">Все производители</a><!-- Стоит обернуть в <div>? -->
+          <div>
+            <a href="#">Все производители</a>
+          </div>
         </div>
         <div class="manufakturers-list">
-          <!-- Стоит обернуть в <div> ссылки здесь? -->
           <div>
             <a class="btn manufakturer" href="#"><img src="img.jpg" alt="" width="" height=""></a>
           </div>
@@ -167,6 +214,112 @@
           </div>
         </div> 
       </section>   
+      <!-- Блок сервисов -->
+      <section class="services">
+        <b>Сервисы</b>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="paper-btn-selector">
+          <div class="paper-btn paper-btn-delivery">
+            <input type="radio" name="answer" id="yes-delivery">
+            <label for="yes-delivery">Доставка</label>
+          </div>
+          <div class="paper-btn paper-btn-guarantee">
+            <input type="radio" name="answer" id="yes-guarantee">
+            <label for="yes-guarantee">Гарантия</label>
+          </div>
+          <div class="paper-btn paper-btn-credit">
+            <input type="radio" name="answer" id="yes-credit">
+            <label for="yes-credit">Кредит</label>
+          </div>
+        </div>
+        <b>Доставка</b>
+        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        <div>
+          <img src="img.jpg" alt="" width="" height=""><!-- грузовик -->
+        </div>
+      </section> 
+      <!-- Блок компании --><!-- Блок компании требует доработки -->
+      <section class="technomart-company">
+        <b>Компания &laquo;Техномарт&raquo;</b>
+        <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <div>
+          <a class="btn company" href="#">Подробнее о компании</a>
+        </div>
+        <b>Контакты</b>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <div>
+          <a class="btn map" href="#"><img src="img.jpg" alt="" width="" height=""></a>
+        </div>
+        <div>
+          <a class="btn company" href="#">Заблудились? Напишите нам!</a>
+        </div>
+      </section> 
     </main>
+    <!-- Футер --><!-- В футере изменен порядок элементов, для удобства восприятия разметки, при необходимости- сменить -->
+    <footer class="main-footer">
+      <div class="index-logo">
+        <a href="#">
+          <img src="img/index-logo.png" width="60" height="20" alt="Техномарт"><!-- логотип Техномарт -->
+        </a>
+      </div>
+      <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7(812)555-05-55</p><!-- бр или разделить и обернуть в див? -->
+      <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; Все права защищены</p><!-- бр или разделить и обернуть в див? -->
+      <section class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="mail">
+        <p>Обратная связь:</p>
+        <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
+      </section>
+      <section class="author-copyright">
+        <p>Разработано-</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a><!-- разработано -->
+      </section>
+      <!-- Навигация по сайту в футере-->
+      <nav class="footer-navigation">
+        <ul>
+          <li>
+            <a href="#">Компания</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Навигация по типам товаров в футере-->
+      <nav class="footer-navigation-goods">
+        <ul>
+          <li>
+            <a href="#">Материалы</a>
+          </li>
+          <li>
+            <a href="#">Техника</a>
+          </li>
+          <li>
+            <a href="#">Инструмент</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
