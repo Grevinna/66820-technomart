@@ -1,0 +1,32 @@
+/*Папка для стилевых файлов.
+--
+Пример структуры файлов:
+css/
+| - style.css
+| - normalize.css
+| - [другие *.css файлы]*/
+
+
+
+
+body {
+  font-size: 20px;
+  line-height: 2;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  line-height: 2;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+}
+h2 {
+  font-size: 25px;
+  line-height: 2;
+  color: black;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+}
