@@ -11,76 +11,84 @@ css/
 
 body {
   font-size: 12px;
-  line-height: 2;
+  line-height: 1;
   color: black;
   font-weight: normal;
   font-family: Arial, sans-serif;
 }
+
 h1 {
   font-size: 18px;
-  line-height: 2;
+  line-height: 1;
   color: black;
   font-weight: normal;
   font-family: Arial, sans-serif;
 }
+
 h2 {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1;
   color: black;
   font-weight: normal;
   font-family: Arial, sans-serif;
 }
+
 /* Header */
+
 .container-header {
   display: flex;
   flex-wrap: wrap;
-  min-height: 260px;
-  min-width: 940px;
+  width: 940px;
   background: #F0FFF0; 
   flex-direction: column;
+  margin: auto;
 }
+
 /* panel */
+
 .panel {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #40E0D0;
-  min-height: 42px;
-  min-width: 50px;  
+  background: #40E0D0; 
 }
+
 .search {
   background: #FFE4E1;
-  min-height: 20px;
-  min-width: 240px;
+  height: 40px;
+  width: 240px;
   margin:5px;
 }
+
 .btn-bookmark {
   background: #FFE4E1;
-  min-height: 20px;
-  min-width: 150px;
+  height: 40px;
+  width: 150px;
   margin:5px;
 }
 .btn-cart {
   background: #FFE4E1;
-  min-height: 20px;
-  min-width: 150px;
+  height: 40px;
+  width: 150px;
   margin:5px;
 }
+
 .btn-order {
   background: #FFE4E1;
-  min-height: 20px;
-  min-width: 150px;
+  height: 40px;
+  width: 150px;
   margin:5px;
 }
+
 /* contacts-user  */
+
 .contacts-user {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #40E0D0;
-  min-height: 158px;
-  min-width: 940px;
 }
+
 .caption {
   background: #FFE4E1;
   height: 60px;
@@ -93,7 +101,9 @@ h2 {
   width: 300px;
   margin:5px;
 }
+
 /* user-block */
+
 .user-block {
   background: #FFE4E1;
   height: 45px;
@@ -102,230 +112,255 @@ h2 {
   margin-left: 30px;
   margin-right: 0px;
 }
+
 .first-user-block {
   background: #FFE4E1;
   height: 45px;
   width: 150px;
   margin:5px;
 }
+
 /* main-navigation  вылетает за пределы из-за  значка-li */
+
 .main-navigation {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #40E0D0;
-  min-height: 55px;
-  min-width: 940px;
 }
+
 .list-main-navigation {
   display: flex;
   flex-direction: row;
 }
+
 .item-main-navigation {
   background: #FFE4E1;
-  height: 20px;
+  height: 55px;
   min-width: 120px;
   margin:1px;
 }
+
 .item-main-navigation:nth-child(1) {
   width: 150px;
 }
+
 .item-main-navigation:nth-child(5) {
   width: 150px;
 }
+
 .item-main-navigation:nth-child(6) {
   width: 130px;
 }
+
 .item-main-navigation:nth-child(7) {
   width: 150px;
 }
+
 /* index тело станицы*/
 /* container */
+
 .container {
   display: flex;
   flex-wrap: wrap;
-  min-height: ;
   min-width: 940px;
   background: #F0FFF0; 
   flex-direction: column;
   justify-content: center;
 }
+
 section {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #40E0D0;
-  min-height: 40px;
-  min-width: 940px; 
-}
-/*.features*/
-.features {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #40E0D0;
   width: 940px;
+  margin: auto;
   flex-wrap: wrap;
 }
+
+/*.features*/
+
+.features {
+  display: flex;
+}
+
 .features-item {
   background: #FFE4E1;
   height: 123px;
   width: 300px;
   margin:5px;
 }
+
 .slider {
-   background: #FFE4E1;
+  background: #FFE4E1;
   height: 267px;
   width: 621px;
   margin: 5px;
 }
+
 /*.goods*/
+
 .goods {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
-  flex-wrap: wrap;
 }
+
 .popular-goods {
-   display: flex;
-  flex-direction: row;
+  display: flex;
   justify-content: space-between;
-  background: #40E0D0;
   width: 940px;
   height: 90px;
-  flex-wrap: wrap;
 }
+
 .goods-list {
    display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
-  flex-wrap: wrap;
 }
+
 .goods-item {
   background: #FFE4E1;
   height: 318px;
   width: 220px;
   margin:5px;
 }
+
 /*.manufacturers*/
+
 .manufacturers {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
-  flex-wrap: wrap;
 }
+
 .popular-manufacturers {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  background: #40E0D0;
   width: 940px;
   height: 90px;
-  flex-wrap: wrap;
 }
+
 .manufacturers-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
   flex-wrap: wrap;
 }
+
 .manufacturers-list div{
   background: #FFE4E1;
   height: 145px;
   width: 220px;
-  margin:5px;
+  margin: 5px;
 }
+
 /*.services*/
+
 .services {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
-  flex-wrap: wrap;
+  justify-content: flex-start;
 }
+
 .services-slogan {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #40E0D0;
-  width: 940px;
-  height: 90px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 400px;
+  height: 100px;
+  margin: 5px;
 }
+
 .about-services {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #40E0D0;
-  width: 940px;
   flex-wrap: wrap;
 }
+
 .paper-btn-selector {
   background: #FFE4E1;
   height: 182px;
   width: 240px;
   margin:5px;
 }
-.paper-btn-selector b {
-  display: inline-block;
-  background: #FFE4E1;
-  height: 182px;
-  width: 240px;
-  margin:5px;
+
+.delivery-slogan {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  height: 155px;
+  margin: 5px;
 }
-.paper-btn-selector p {
-  display: inline-block;
+
+/*грузовик в фото-вебинаре советовали сделать фоном... стоит рассмотреть этот вариант? Или есть еще решения? */
+
+/*.technomart-company*/
+
+.technomart-company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-technomart-company {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  height: 370px;
+  margin: 5px;
+}
+
+.technomart-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 370px;
+  margin: 5px;
+}
+
+/*footer*/
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 940px;
+  background: #F0FFF0; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-navigation {
+  
+}
+
+.social-copyright {
+  
+}
+
+
+
+
+
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #40E0D0;
+  width: 940px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/*.features*/
+
+.features {
+  display: flex;
+}
+
+.features-item {
   background: #FFE4E1;
-  height: 170px;
+  height: 123px;
   width: 300px;
   margin:5px;
 }
-/*.technomart-company*/
 
-technomart-company {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #40E0D0;
-  width: 940px;
-  height: 137px;
-  flex-wrap: wrap;
+.slider {
+  background: #FFE4E1;
+  height: 267px;
+  width: 621px;
+  margin: 5px;
 }
-about-technomart-company {
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #40E0D0;
-  width: 540px;
-  height: 137px;
-  flex-wrap: wrap;
-}
-contacts {
-   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #40E0D0;
-  width: 380px;
-  height: 137px;
-  flex-wrap: wrap;
-}
-
-
-
-
-
-
-
-
 
 
 
