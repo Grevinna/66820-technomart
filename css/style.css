@@ -42,6 +42,7 @@ h2 {
   background: #F0FFF0; 
   flex-direction: column;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 /* panel */
@@ -137,7 +138,7 @@ h2 {
 .item-main-navigation {
   background: #FFE4E1;
   height: 55px;
-  min-width: 120px;
+  width: 120px;
   margin:1px;
 }
 
@@ -163,10 +164,11 @@ h2 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  min-width: 940px;
+  width: 940px;
   background: #F0FFF0; 
   flex-direction: column;
   justify-content: center;
+  margin: auto;
 }
 
 .section-main {
@@ -383,10 +385,60 @@ h2 {
 
 /*
 
-
+inner
 
 */
 
+.breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  background: #40E0D0;
+}
+
+.breadcrumbs ul li {
+  margin: 10px;
+}
+
+.page-heading {
+  margin: 10px;
+}
+
+.inner-main-content {
+  display: flex;
+  flex-direction: row;
+  background: #40E0D0;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  background: #40E0D0;
+  flex: 1;
+}
+
+.manufacturer-item, .еnergy {
+  display: flex;
+  flex-direction: column;
+  background: #40E0D0;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;
+  background: #40E0D0;
+  flex: 3;
+}
+
+.sorting-goods-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pages {
+  align-self: center;
+  margin: 10px;
+}
 
 
 
@@ -397,6 +449,9 @@ h2 {
 
 
 
+  /*
+
+*/
 
 
 
