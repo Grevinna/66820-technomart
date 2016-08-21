@@ -43,6 +43,7 @@ h2 {
   flex-direction: column;
   margin: auto;
   margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 /* panel */
@@ -51,32 +52,25 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #40E0D0; 
+  background: #40E0D0;
 }
 
 .search {
-  background: #FFE4E1;
-  height: 40px;
   width: 240px;
   margin:5px;
 }
 
 .btn-bookmark {
-  background: #FFE4E1;
-  height: 40px;
   width: 150px;
   margin:5px;
 }
 .btn-cart {
-  background: #FFE4E1;
   height: 40px;
   width: 150px;
   margin:5px;
 }
 
 .btn-order {
-  background: #FFE4E1;
-  height: 40px;
   width: 150px;
   margin:5px;
 }
@@ -87,18 +81,13 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: #40E0D0;
 }
 
 .caption {
-  background: #FFE4E1;
-  height: 60px;
   width: 300px;
   margin:5px;
 }
 .contacts {
-  background: #FFE4E1;
-  height: 75px;
   width: 300px;
   margin:5px;
 }
@@ -106,8 +95,6 @@ h2 {
 /* user-block */
 
 .user-block {
-  background: #FFE4E1;
-  height: 45px;
   width: 150px;
   margin:5px;
   margin-left: 5px;
@@ -115,47 +102,22 @@ h2 {
 }
 
 .first-user-block {
-  background: #FFE4E1;
-  height: 45px;
   width: 150px;
   margin:5px;
 }
 
 /* main-navigation  вылетает за пределы из-за  значка-li */
 
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: #40E0D0;
-}
 
 .list-main-navigation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background: #40E0D0;
 }
 
 .item-main-navigation {
-  background: #FFE4E1;
-  height: 55px;
-  width: 120px;
-  margin:1px;
-}
-
-.item-main-navigation:nth-child(1) {
-  width: 150px;
-}
-
-.item-main-navigation:nth-child(5) {
-  width: 150px;
-}
-
-.item-main-navigation:nth-child(6) {
-  width: 130px;
-}
-
-.item-main-navigation:nth-child(7) {
-  width: 150px;
+  margin: 10px;
 }
 
 /* index тело станицы*/
@@ -184,70 +146,65 @@ h2 {
 /*.features*/
 
 .features {
-  display: flex;
+  align-self: flex-start;
 }
 
 .features-item {
-  background: #FFE4E1;
-  height: 123px;
   width: 300px;
   margin:5px;
 }
 
 .slider {
-  background: #FFE4E1;
-  height: 267px;
-  width: 621px;
   margin: 5px;
+}
+
+.features-item-after-the-slider {
+  display: flex; 
+  flex-direction: column;
 }
 
 /*.goods*/
 
 .goods {
-  display: flex;
+  
 }
 
 .popular-goods {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  height: 90px;
 }
 
 .goods-list {
-   display: flex;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
 }
 
 .goods-item {
-  background: #FFE4E1;
-  height: 318px;
-  width: 220px;
-  margin:5px;
+  
 }
 
 /*.manufacturers*/
 
 .manufacturers {
-  display: flex;
+ 
 }
 
 .popular-manufacturers {
   display: flex;
   justify-content: space-between;
   width: 940px;
-  height: 90px;
 }
 
 .manufacturers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .manufacturers-list div{
-  background: #FFE4E1;
-  height: 145px;
-  width: 220px;
-  margin: 5px;
+ margin-bottom: 20px;
 }
 
 /*.services*/
@@ -255,14 +212,14 @@ h2 {
 .services {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 50px;
 }
 
 .services-slogan {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 100px;
-  margin: 5px;
+  margin-bottom: 50px;
 }
 
 .about-services {
@@ -271,43 +228,39 @@ h2 {
 }
 
 .paper-btn-selector {
-  background: #FFE4E1;
-  height: 182px;
   width: 240px;
-  margin:5px;
 }
 
 .delivery-slogan {
   display: flex;
   flex-direction: column;
   width: 275px;
-  height: 155px;
-  margin: 5px;
 }
 
-/*грузовик в фото-вебинаре советовали сделать фоном... стоит рассмотреть этот вариант? Или есть еще решения? */
+/*грузовик в фото-вебинаре советовали сделать фоном... стоит рассмотреть этот вариант? Или есть еще решения?
+
+Судя по тому, чтонельзя использовать в сетке позиционирование, то фоном сделать прийдется.
+*/
 
 /*.technomart-company*/
 
 .technomart-company {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-bottom: 50px;
 }
 
 .about-technomart-company {
   display: flex;
   flex-direction: column;
   width: 520px;
-  height: 370px;
-  margin: 5px;
+  margin-right: 50px;
 }
 
 .technomart-contacts {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 370px;
-  margin: 5px;
 }
 
 /*footer*/
@@ -400,7 +353,7 @@ inner
 }
 
 .page-heading {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .inner-main-content {
@@ -429,10 +382,17 @@ inner
   flex: 3;
 }
 
+.sorting-tool {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
 .sorting-goods-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .pages {
