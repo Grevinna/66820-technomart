@@ -12,31 +12,25 @@ font-family: 'PT Sans', sans-serif;
 */
 
 
-
-
 body {
   font-size: 12px;
   line-height: 1;
   color: black;
   font-weight: normal;
-  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-family: "Cuprum", "PT Sans", sans-serif;
   background: #ffffff url("") no-repeat center top;
 }
 
 h1 {
   font-size: 18px;
-  line-height: 1;
   color: black;
   font-weight: normal;
-  font-family: Arial, sans-serif;
 }
 
 h2 {
   font-size: 16px;
-  line-height: 1;
   color:  #000000;
   font-weight: normal;
-  font-family: Arial, sans-serif;
 }
 
 /* Header */
@@ -83,7 +77,7 @@ h2 {
 }
 
 .search {
-  width: 200px;
+  width: 275px;
   vertical-align: top;
   text-align: center;
   font-size: 17px;
@@ -92,40 +86,31 @@ h2 {
   padding: 12px 0;
 }
 
-.btn-bookmark {
+.btn-panel {
   width: 150px;
-  vertical-align: top;
   text-align: center;
-  font-size: 17px;
-  line-height: 18px;
-  vertical-align: top;
-  padding: 12px 0;
 }
 
-.btn-cart {
-  width: 150px;
-  vertical-align: top;
-  text-align: center;
-  font-size: 17px;
-  line-height: 18px;
-  vertical-align: top;
-  padding: 12px 0;
-}
-
-.btn-order {
-  width: 150px;
-  vertical-align: top;
-  text-align: center;
-  font-size: 17px;
-  line-height: 18px;
-  vertical-align: top;
-  padding: 12px 0;
-}
-
-.panel a {  
+.btn-panel a {  
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  font-size: 17px;
+  line-height: 18px;
+  vertical-align: middle;
+  padding: 12px;
+  padding-bottom: 18px;
 }
+
+.btn-panel a:hover {
+  background: #242424;
+}
+
+.btn-panel a:active {
+  background: red;
+}
+
+
 
 /* contacts-user  */
 
@@ -176,34 +161,36 @@ h2 {
 /* user-block */
 
 .user-block {
-  width: 60px;
-  height: 24px;
+  width: 111px;
+  height: 45px;
   background: #ffffff;
   margin: 5px;
-  vertical-align: top;
   text-align: center;
-  font-size: 21px;
-  line-height: 18px;
-  padding: 10px;
-  padding-left: 40px;
   margin-right: -45px;
+  
 }
 
 .first-user-block {
-  width: 120px;
-  margin:5px;
-  height: 24px;
+  width: 145px;
+  height: 45px;
   background: #ffffff;
   margin: 5px;
-  vertical-align: top;
+  margin-right: 0px;
   text-align: center;
-  font-size: 21px;
-  line-height: 18px;
-  padding: 10px;
 }
 
 .contacts-user a {
+  display: block;
   text-decoration: none;
+  font-size: 21px;
+  line-height: 18px;
+  vertical-align: top;
+  padding: 10px;
+  padding-bottom: 18px;
+}
+
+.user-block a {
+  padding-left: 30px;
 }
 
 /* main-navigation */
@@ -225,15 +212,17 @@ h2 {
 }
 
 .item-main-navigation{
+  height: 55px;
   font-size: 17px;
   line-height: 17px;
   vertical-align: top;
-  padding: 20px 31px;
 }
 
 .main-navigation a{
+  display: block;
   color: #ffffff;
   text-decoration: none;
+  padding: 22px 31px;
 }
 
 /* index тело станицы*/
@@ -268,33 +257,34 @@ h2 {
 
 .features a {
   position: absolute;
-  left: 25px;
-  bottom: 25px;
+  left: 20px;
+  bottom: 20px;
   color: #ffffff;
   text-decoration: none; 
-  padding: 5px 20px;
+  width: 135px;
+  padding: 12px 0px;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  vertical-align: top;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
 .features-item {
   position: relative;
   width: 300px;
-  height: 125px;
+  height: 123px;
   margin-bottom: 20px;
   background: red;
 }
 
 h3 {
   display: block;
-  width: 100px;
+  width: 120px;
   padding-left: 20px;
   font-size: 24px;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
   vertical-align: top;
 }
 
@@ -308,36 +298,113 @@ h3 {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 140px;
-  height: 123px;
+  width: 109px;
+  height: 92px;
+  padding-top: 31px;
+  padding-left: 31px;
 }
 
-.icon-features img {
- margin: auto;
+.materials .icon-features img {
+ margin-left: 20px;
+}
+
+.tool .icon-features img {
+ margin-left: 8px;
 }
 
 .materials {
-  
+  background: #f6b22d;
 }
 
 .tool {
-  
+  background: #4aafde;
 }
 
 .equipment {
-  
+  background: #cc79d1;
 }
 
 .discounts {
-  
+  background: #85d179;
 }
 
 .delivery {
-  
+  background: #f6b22d;
+}
+
+
+.materials a {
+  background: #dda028;
+}
+
+.tool a {
+  background: #429dc7;
+}
+
+.equipment a {
+  background: #b76dbc;
+}
+
+.discounts a {
+  background: #77bc6d;
+}
+
+.delivery a {
+  background: #dda028;
 }
 
 .slider {
-  
+  position: relative;
+  width: 620px;
+  height: 266px;
+  background: #000000 ;
+}
+
+.slider-name {
+  position: absolute;
+  display: block;
+  min-width: 120px;
+  padding-left: 25px;
+  margin-top: 25px;
+  font-size: 36px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.slider p {
+  position: absolute;
+  display: block;
+  min-width: 220px;
+  padding-left: 25px;
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+}
+
+.open-directory {
+
+}
+
+.open-directory a {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+  color: #ffffff;
+  text-decoration: none; 
+  width: 195px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: #ee3643;
 }
 
 .features-item-after-the-slider {
@@ -350,14 +417,44 @@ h3 {
 
 /*.goods*/
 
-.goods {
-  
-}
+
 
 .popular-goods {
   display: flex;
   justify-content: space-between;
   width: 940px;
+  background: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.goods h2 {
+  padding-left: 30px;
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.popular-goods-link {
+  text-align: center;
+  vertical-align: top;
+  width: 255px;
+  height: 40px;
+  margin: 25px;
+}
+
+.popular-goods-link a {
+  display: block;
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: #ee3643;
+  padding: 11px;
 }
 
 .goods-list {
@@ -367,7 +464,7 @@ h3 {
 }
 
 .goods-item {
-  
+  border: 1px solid #e5e5e5;
 }
 
 /*.manufacturers*/
@@ -380,6 +477,38 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 940px;
+  background: #f7f3ec;
+  margin-bottom: 20px;
+}
+
+.manufacturers h2 {
+  padding-left: 30px;
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+.popular-manufacturers-link {
+  text-align: center;
+  vertical-align: top;
+  width: 255px;
+  height: 40px;
+  margin: 25px;
+}
+
+.popular-manufacturers-link a {
+  display: block;
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: #ee3643;
+  padding: 11px;
 }
 
 .manufacturers-list {
@@ -388,7 +517,7 @@ h3 {
   justify-content: space-between;
 }
 
-.manufacturers-list div{
+.manufacturers-list-item{
  margin-bottom: 20px;
 }
 
