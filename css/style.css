@@ -65,15 +65,24 @@ h2 {
 }
 
 .index-logo {
-  width: 200px;
+  width: 220px;
   background-color:#ee3643;
   box-shadow: 0 5px #b52933;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   vertical-align: top;
-  padding: 12px;
   text-transform: uppercase;
+}
+
+.index-logo a {  
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  padding: 12px;
 }
 
 .search {
@@ -525,6 +534,7 @@ h3 {
 .servis-content {
   width: 100%;
   background: #f2f6f8;
+  margin-bottom: 80px;
 }
 
 .services {
@@ -545,7 +555,7 @@ h3 {
 .services-slogan {
   display: flex;
   flex-direction: column;
-  width: 330px;
+  width: 400px;
   margin-top: 45px; 
   margin-bottom: 65px;
 }
@@ -596,7 +606,7 @@ h3 {
 .services-content-slogan {
   display: flex;
   flex-direction: column;
-  width: 230px;
+  width: 268px;
   margin-left: 80px;
 }
 
@@ -609,18 +619,19 @@ h3 {
   margin-top: 0px;
 }
 
-
-/*грузовик в фото-вебинаре советовали сделать фоном... стоит рассмотреть этот вариант? Или есть еще решения?
-
-Судя по тому, чтонельзя использовать в сетке позиционирование, то фоном сделать прийдется.
-*/
+.services p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0px;
+}
 
 /*.technomart-company*/
 
 .technomart-company {
   display: flex;
-  justify-content: flex-start;
-  padding-bottom: 50px;
+  justify-content: space-between;
 }
 
 .about-technomart-company {
@@ -636,6 +647,70 @@ h3 {
   width: 300px;
 }
 
+.technomart-company h2 {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.technomart-company p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0px;
+}
+
+.container-btn-map {
+  width: 300px;
+  height: 158px;
+  margin: 40px 0px;
+}
+
+.btn-company-link {
+  text-align: center;
+  vertical-align: top;
+  width: 220px;
+  height: 40px;
+}
+
+.btn-company-link a {
+  display: block;
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: #ee3643;
+  padding: 11px;
+  color: #ffffff;
+}
+
+.btn-mail-link {
+  text-align: center;
+  vertical-align: top;
+  width: 300px;
+  height: 40px;
+}
+
+.btn-mail-link a {
+  display: block;
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: #ee3643;
+  padding: 11px;
+  color: #ffffff;
+}
+
+
 /*footer*/
 
 .footer-container {
@@ -643,31 +718,28 @@ h3 {
   flex-wrap: wrap; 
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
-  padding-bottom: 30px;
   color: #ffffff;
   background: #293449;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 50px;
 }
 
 .logo-navigation {
+  background: #32425c;
+}
+
+.social-copyright {
+  background: #293449;
+}
+
+.logo-navigation-content {
   display: flex;
   flex-direction: row;
   width: 940px;
   margin: auto;
   justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.social-copyright {
-  display: flex;
-  flex-direction: row;
-  min-width: 940px;
-  margin: auto;
-  justify-content: space-between;
-}
-
-.footer-social {
-  margin: 10px;
+  margin-bottom: 30px;
 }
 
 .index-logo-adress {
@@ -675,6 +747,27 @@ h3 {
   flex-direction: column;
 }
 
+footer .index-logo {
+  width: 220px;
+  background-color:#ee3643;
+  box-shadow: 0 5px #b52933;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+footer .index-logo a {  
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  padding: 17px;
+}
 
 .footer-navigations {
   display: flex;
@@ -687,18 +780,31 @@ h3 {
   justify-content: flex-end;
 }
 
+.footer-navigation ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
 .footer-navigation-goods ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
+.footer-navigation-goods ul a {
+  color: #d6b479;
+  text-decoration: none;
+}
+
+
 .footer-navigation ul li{
- margin: 5px 40px;
+  margin-right: 60px;
+  margin-top: 20px;
 }
 
 .footer-navigation-goods ul li{
- margin: 5px 40px;
+ margin-right: 60px;
 }
 
 .footer-navigation ul li:last-child {
@@ -708,6 +814,49 @@ h3 {
 .footer-navigation-goods ul li:last-child {
  margin-right: 0px;
 }
+
+li {
+ list-style-type: none; /* Убираем маркеры на всем макете */
+}
+
+
+
+
+.social-copyright-content {
+  display: flex;
+  flex-direction: row;
+  width: 940px;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.social-copyright-content a {
+  color: #d6b479;
+  text-decoration: none;
+}
+
+.footer-social {
+  margin: 10px;
+}
+
+.copyright {
+  display: inline-block;
+  width: 230px;
+  margin: 0px;
+}
+
+.mail p, .author-copyright p {
+  margin: 0px;
+}
+
+
+
+
+
 
 
 /*

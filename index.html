@@ -15,8 +15,7 @@
         <div class="panel"> 
           <div class="panel-content"> 
             <div class="index-logo">
-              <!--<img src="img/index-logo.png" width="220" height="47" alt="Техномарт"> <!--+ к вн стр <a href="#">Техномарт</a>-->
-              <a>Техномарт</a>
+              <a href="index.html">Техномарт</a>
             </div>
             <div class="search"><!-- Поиск, надеюсь пока этого хватит, немного теряюсь, как лучше сделать -->
               <form>
@@ -56,7 +55,7 @@
         <nav class="main-navigation">
           <ul class="list-main-navigation">
             <li class="item-main-navigation">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="item-main-navigation">
               <a href="#">Компания</a>
@@ -117,7 +116,7 @@
           <h3 class="slider-name">Перфораторы</h3>
           <p>Настоящие мужские игрушки</p>
           <div class="open-directory">
-            <a href="#">Открыть каталог</a>
+            <a href="inner.html">Открыть каталог</a>
           </div>
           <div>
               <img src="img/punchers.jpg" width="620" height="266" alt=""><!-- фоновая картинка -->
@@ -287,18 +286,18 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <div>
+          <div class="btn-company-link">
             <a class="btn company" href="#">Подробнее о компании</a>
           </div>
         </div>
         <div class="technomart-contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <div>
-            <a class="btn map" href="#"><img src="img/map.png" width="300" height="158" alt=""></a>
+          <p>Вы можете забрать товар сами, <br>заехав в наш офис:</p>
+          <div class="container-btn-map">
+            <a class="btn-map" href="#"><img src="img/map.png" width="300" height="158" alt=""></a>
           </div>
-          <div>
-            <a class="btn company" href="#">Заблудились? Напишите нам!</a>
+          <div class="btn-mail-link">
+            <a class="btn mail" href="#">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </section> 
@@ -307,70 +306,72 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="logo-navigation">
-          <div class="index-logo-adress">
-            <div class="index-logo">
-              <a href="#">
-                <img src="img/index-logo-footer.jpg" width="220" height="68" alt="Техномарт"><!-- логотип Техномарт -->
-              </a>
+          <div class="logo-navigation-content">
+            <div class="index-logo-adress">
+              <div class="index-logo">
+                <a href="index.html">Техномарт</a>
+              </div>
+              <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
             </div>
-            <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p><!-- бр или разделить и обернуть в див? -->
+                <!-- Навигация по сайту в футере-->
+            <div class="footer-navigations">
+              <nav class="footer-navigation">
+                <ul>
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- Навигация по типам товаров в футере-->
+              <nav class="footer-navigation-goods">
+                <ul>
+                  <li>
+                    <a href="#">Материалы</a>
+                  </li>
+                  <li>
+                    <a href="#">Техника</a>
+                  </li>
+                  <li>
+                    <a href="#">Инструмент</a>
+                  </li>
+                  <li>
+                    <a href="#">Спецпредложения</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>  
           </div>
-              <!-- Навигация по сайту в футере-->
-          <div class="footer-navigations">
-            <nav class="footer-navigation">
-              <ul>
-                <li>
-                  <a href="#">Компания</a>
-                </li>
-                <li>
-                  <a href="#">Новости</a>
-                </li>
-                <li>
-                  <a href="#">Каталог</a>
-                </li>
-                <li>
-                  <a href="#">Доставка</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- Навигация по типам товаров в футере-->
-            <nav class="footer-navigation-goods">
-              <ul>
-                <li>
-                  <a href="#">Материалы</a>
-                </li>
-                <li>
-                  <a href="#">Техника</a>
-                </li>
-                <li>
-                  <a href="#">Инструмент</a>
-                </li>
-                <li>
-                  <a href="#">Спецпредложения</a>
-                </li>
-              </ul>
-            </nav>
-          </div>  
         </div>
         <div class="social-copyright">
-          <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; <br>Все права защищены</p><!-- бр или разделить и обернуть в див? -->
-          <section class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">В</a>
-            <a class="social-btn social-btn-fb" href="#">Ф</a>
-            <a class="social-btn social-btn-inst" href="#">И</a>
-          </section>
-          <section class="mail">
-            <p>Обратная связь:</p>
-            <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
-          </section>
-          <section class="author-copyright">
-            <p>Разработано-</p>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a><!-- разработано -->
-          </section>
-        </div>
+          <div class="social-copyright-content">
+            <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; Все права защищены</p>
+            <section class="footer-social">
+              <a class="social-btn social-btn-vk" href="#">В</a>
+              <a class="social-btn social-btn-fb" href="#">Ф</a>
+              <a class="social-btn social-btn-inst" href="#">И</a>
+            </section>
+            <section class="mail">
+              <p>Обратная связь:</p>
+              <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
+            </section>
+            <section class="author-copyright">
+              <p>Разработано-</p>
+              <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a><!-- разработано -->
+            </section>
+          </div>
+        </div> 
       </div>
     </footer>
   </body>
