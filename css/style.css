@@ -586,10 +586,14 @@ h3 {
 }
 
 .paper-btn input:checked ~ label { 
-  
+  color:#32425c;
+  background-color: #ffffff;
+  box-shadow:
+    0 0 0 0 #405069 inset,
+    0 0 0 0 #293449 inset; 
 }
 
-.delivery-slogan {
+.services-content-slogan {
   display: flex;
   flex-direction: column;
   width: 230px;
