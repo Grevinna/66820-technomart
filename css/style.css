@@ -230,8 +230,7 @@ h2 {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  width: 940px; 
+  flex-wrap: wrap; 
   flex-direction: column;
   justify-content: center;
   margin: auto;
@@ -376,7 +375,7 @@ h3 {
 .slider p {
   position: absolute;
   display: block;
-  min-width: 220px;
+  min-width: 280px;
   padding-left: 25px;
   margin-top: 60px;
   font-size: 18px;
@@ -455,6 +454,7 @@ h3 {
   text-transform: uppercase;
   background: #ee3643;
   padding: 11px;
+  color: #ffffff;
 }
 
 .goods-list {
@@ -509,6 +509,7 @@ h3 {
   text-transform: uppercase;
   background: #ee3643;
   padding: 11px;
+  color: #ffffff;
 }
 
 .manufacturers-list {
@@ -523,17 +524,30 @@ h3 {
 
 /*.services*/
 
+.servis-content {
+  width: 100%;
+  margin-bottom: 50px;
+  background: #f2f6f8;
+}
+
 .services {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 50px;
+  background: url("../img/truck.png") no-repeat;
+  background-position: right bottom;
+  /*
+  
+  
+  */
 }
+
 
 .services-slogan {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin-bottom: 50px;
+  width: 330px;
+  margin-top: 45px; 
 }
 
 .about-services {
@@ -542,14 +556,29 @@ h3 {
 }
 
 .paper-btn-selector {
+  position: relative;
   width: 240px;
+}
+
+.vertical-shadow {
+  position: absolute;
+  left: 100px;
 }
 
 .delivery-slogan {
   display: flex;
   flex-direction: column;
-  width: 275px;
+  width: 230px;
 }
+
+.services h2 {
+  font-size: 30px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
 
 /*грузовик в фото-вебинаре советовали сделать фоном... стоит рассмотреть этот вариант? Или есть еще решения?
 
