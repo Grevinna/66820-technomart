@@ -362,7 +362,6 @@ h3 {
 .slider-name {
   position: absolute;
   display: block;
-  min-width: 120px;
   padding-left: 25px;
   margin-top: 25px;
   font-size: 36px;
@@ -375,7 +374,6 @@ h3 {
 .slider p {
   position: absolute;
   display: block;
-  min-width: 280px;
   padding-left: 25px;
   margin-top: 60px;
   font-size: 18px;
@@ -548,6 +546,7 @@ h3 {
   flex-direction: column;
   width: 330px;
   margin-top: 45px; 
+  margin-bottom: 65px;
 }
 
 .about-services {
@@ -563,6 +562,29 @@ h3 {
 .vertical-shadow {
   position: absolute;
   left: 100px;
+}
+
+.paper-btn input {
+    display: none
+}
+
+.paper-btn label {
+  display: inline-block;
+  width: 210px;
+  line-height: 30px;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #32425c;
+  cursor: pointer;
+  box-shadow:
+    0 1px 0 0 #405069 inset,
+    0 -1px 0 0 #293449 inset;
+  padding: 20px;
+  padding-bottom: 23px;
+}
+
+.paper-btn input:checked ~ label { 
+  
 }
 
 .delivery-slogan {
