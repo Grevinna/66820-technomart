@@ -632,6 +632,7 @@ h3 {
 .technomart-company {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .about-technomart-company {
@@ -722,7 +723,6 @@ h3 {
   background: #293449;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 50px;
 }
 
 .logo-navigation {
@@ -902,10 +902,11 @@ inner
   text-transform: uppercase;
 }
 
+/*.inner-main-content*/
+
 .inner-main-content {
   display: flex;
   flex-direction: row;
-  background: #40E0D0;
   width: 940px;
   margin: auto;
 }
@@ -913,20 +914,17 @@ inner
 .filter {
   display: flex;
   flex-direction: column;
-  background: #40E0D0;
   flex: 1;
 }
 
 .manufacturer-item, .еnergy {
   display: flex;
   flex-direction: column;
-  background: #40E0D0;
 }
 
 .sorting {
   display: flex;
   flex-direction: column;
-  background: #40E0D0;
   flex: 3;
 }
 
@@ -934,6 +932,7 @@ inner
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
+  background: #40E0D0;
 }
 
 .sorting-goods-list {
@@ -943,24 +942,77 @@ inner
   justify-content: space-between;
 }
 
+/* .pages */
+
+.switch-pages {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 70px;
+  
+}
+
 .pages {
-  align-self: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
   width: 940px;
   margin: auto;
 }
 
+.page {
+}
 
+.pages a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 5px;
+}
 
+.pages a:first-child {
+  margin-left: 240px;
+}
 
+.pages a:last-child {
+  padding: 10px 30px;
+}
 
+ /* .on-product-pages */
 
+.on-product-pages {
+  width: 100%;
+  background: #f2f6f8;
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
 
+.on-product {
+  width: 940px;
+  margin: auto;
+}
 
+.on-product h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+}
 
+.on-product p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
   /*
+
 
 */
 
