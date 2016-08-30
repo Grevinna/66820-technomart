@@ -6,9 +6,9 @@ css/
 | - normalize.css
 | - [другие *.css файлы]
 
-font-family: 'Cuprum', sans-serif;
+font-family: "Cuprum", sans-serif;
 
-font-family: 'PT Sans', sans-serif;
+font-family: "PT Sans", sans-serif;
 */
 
 
@@ -18,12 +18,12 @@ body {
   color: black;
   font-weight: normal;
   font-family: "Cuprum", "PT Sans", sans-serif;
-  background: #ffffff url("") no-repeat center top;
+  background: #ffffff;
 }
 
 h1 {
   font-size: 18px;
-  color: black;
+  color: #000000;
   font-weight: normal;
 }
 
@@ -39,7 +39,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 50px;
   padding-bottom: 50px;
   background-color: #f1f5f7;
 }
@@ -116,7 +115,7 @@ h2 {
 }
 
 .btn-panel a:active {
-  background: red;
+  background: #000000;
 }
 
 
@@ -196,6 +195,7 @@ h2 {
   vertical-align: top;
   padding: 10px;
   padding-bottom: 18px;
+  color: #000000;
 }
 
 .user-block a {
@@ -261,6 +261,7 @@ h2 {
   justify-content: space-between;
   align-self: flex-start;
   color: #ffffff;
+  margin-top: 50px;
 }
 
 .features a {
@@ -284,6 +285,10 @@ h2 {
   height: 123px;
   margin-bottom: 20px;
   background: red;
+}
+
+.features-item:last-child {
+  margin-bottom: 0px;
 }
 
 h3 {
@@ -545,12 +550,7 @@ h3 {
   margin-bottom: 50px;
   background: url("../img/truck.png") no-repeat;
   background-position: right bottom;
-  /*
-  
-  
-  */
 }
-
 
 .services-slogan {
   display: flex;
@@ -819,9 +819,6 @@ li {
  list-style-type: none; /* Убираем маркеры на всем макете */
 }
 
-
-
-
 .social-copyright-content {
   display: flex;
   flex-direction: row;
@@ -853,36 +850,64 @@ li {
   margin: 0px;
 }
 
-
-
-
-
-
-
 /*
+
 
 inner
 
+
 */
 
-.breadcrumbs ul {
+.breadcrumbs ul{
   display: flex;
   flex-direction: row;
-  background: #40E0D0;
+  width: 940px;
+  margin: auto;
+  padding: 0px;
 }
 
 .breadcrumbs ul li {
-  margin: 10px;
+  margin: 25px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans";
+}
+
+.breadcrumbs ul li:first-child {
+  margin-left: 0px;
+}
+
+.breadcrumbs ul li a{
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .page-heading {
+  background: #f2f6f8;
+  width: 940px;
+  margin: auto;
   margin-bottom: 10px;
+}
+
+.page-heading h2{
+  padding-left: 30px;
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
 }
 
 .inner-main-content {
   display: flex;
   flex-direction: row;
   background: #40E0D0;
+  width: 940px;
+  margin: auto;
 }
 
 .filter {
@@ -920,7 +945,10 @@ inner
 
 .pages {
   align-self: center;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 940px;
+  margin: auto;
 }
 
 

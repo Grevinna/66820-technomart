@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Техномарт --><!-- Пока оставила теги <b> -->
+    <!-- Техномарт -->
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container-header">
         <div class="panel"> 
-          <div class="index-logo">
-            <img src="img/index-logo.png" width="220" height="47" alt="Техномарт"> <!--+ к вн стр <a href="#">Техномарт</a>-->
-          </div>
-          <div class="search"><!-- Поиск, надеюсь пока этого хватит, немного теряюсь, как лучше сделать -->
-            <form>
-              <input type="search" placeholder="Поиск:">
-              <button type="submit" class="btn-search"></button>
-            </form>
-          </div>
-          <div class="btn-bookmark">
-            <a class="btn bookmark" href="#">Закладки: 0</a>
-          </div>   
-          <div class="btn-cart">
-            <a class="btn cart" href="#">Корзина: 0</a>
-          </div>
-          <div class="btn-order">
-          <a class="btn order" href="#">Оформить заказ</a>
-          </div>
+          <div class="panel-content"> 
+            <div class="index-logo">
+              <a href="index.html">Техномарт</a>
+            </div>
+            <div class="search"><!-- Поиск, надеюсь пока этого хватит, немного теряюсь, как лучше сделать -->
+              <form>
+                <input type="search" placeholder="Поиск:">
+                <button type="submit" class="btn-search"></button>
+              </form>
+            </div>
+            <div class="btn-panel btn-bookmark">
+              <a class="btn bookmark" href="#">Закладки: 0</a>
+            </div>   
+            <div class="btn-panel btn-cart">
+              <a class="btn cart" href="#">Корзина: 0</a>
+            </div>
+            <div class="btn-panel btn-order">
+            <a class="btn order" href="#">Оформить заказ</a>
+            </div>
+          </div> 
         </div> 
         <div class="contacts-user">
-          <b class="caption">Интернет-магазин строительных материалов и инструментов для ремонта</b>  
+          <b class="caption">Интернет-магазин строительных материалов <br>и инструментов для ремонта</b>  
           <!-- Контакты -->
           <div class="contacts"> 
             <div class="phone-number">
-              +7(812)555-05-55
+              +7 (812) 555-05-55
             </div>
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>  
           </div>
@@ -50,7 +55,7 @@
         <nav class="main-navigation">
           <ul class="list-main-navigation">
             <li class="item-main-navigation">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="item-main-navigation">
               <a href="#">Компания</a>
@@ -73,7 +78,7 @@
           </ul>
         </nav>    
       </div>
-    </header> 
+    </header>  
     <!-- Тело страницы -->
     <main class="container">
       <div class="breadcrumbs">
@@ -93,7 +98,7 @@
         </ul>    
       </div>
       <div class="page-heading">
-        <h2>Перфораторы</h2><!-- Скорее всего <h2>  или надо еще подумать -->
+        <h2>Перфораторы</h2>
       </div>
       <div class="inner-main-content">
         <section class="filter">
@@ -257,7 +262,7 @@
          </section>
        </div>
        <div class="pages">
-        <b class="page">1</b>
+        <a class="page">1</a>
         <a class="page" href="#">2</a>
         <a class="page" href="#">3</a>
         <a class="page" href="#">Следующая</a>
@@ -271,70 +276,72 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="logo-navigation">
-          <div class="index-logo-adress">
-            <div class="index-logo">
-              <a href="#">
-                <img src="img/index-logo-footer.jpg" width="220" height="68" alt="Техномарт"><!-- логотип Техномарт -->
-              </a>
+          <div class="logo-navigation-content">
+            <div class="index-logo-adress">
+              <div class="index-logo">
+                <a href="index.html">Техномарт</a>
+              </div>
+              <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p>
             </div>
-            <p class="adress-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>+7(812)555-05-55</p><!-- бр или разделить и обернуть в див? -->
+                <!-- Навигация по сайту в футере-->
+            <div class="footer-navigations">
+              <nav class="footer-navigation">
+                <ul>
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- Навигация по типам товаров в футере-->
+              <nav class="footer-navigation-goods">
+                <ul>
+                  <li>
+                    <a href="#">Материалы</a>
+                  </li>
+                  <li>
+                    <a href="#">Техника</a>
+                  </li>
+                  <li>
+                    <a href="#">Инструмент</a>
+                  </li>
+                  <li>
+                    <a href="#">Спецпредложения</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>  
           </div>
-              <!-- Навигация по сайту в футере-->
-          <div class="footer-navigations">
-            <nav class="footer-navigation">
-              <ul>
-                <li>
-                  <a href="#">Компания</a>
-                </li>
-                <li>
-                  <a href="#">Новости</a>
-                </li>
-                <li>
-                  <a href="#">Каталог</a>
-                </li>
-                <li>
-                  <a href="#">Доставка</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <!-- Навигация по типам товаров в футере-->
-            <nav class="footer-navigation-goods">
-              <ul>
-                <li>
-                  <a href="#">Материалы</a>
-                </li>
-                <li>
-                  <a href="#">Техника</a>
-                </li>
-                <li>
-                  <a href="#">Инструмент</a>
-                </li>
-                <li>
-                  <a href="#">Спецпредложения</a>
-                </li>
-              </ul>
-            </nav>
-          </div>  
         </div>
         <div class="social-copyright">
-          <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; <br>Все права защищены</p><!-- бр или разделить и обернуть в див? -->
-          <section class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">В</a>
-            <a class="social-btn social-btn-fb" href="#">Ф</a>
-            <a class="social-btn social-btn-inst" href="#">И</a>
-          </section>
-          <section class="mail">
-            <p>Обратная связь:</p>
-            <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
-          </section>
-          <section class="author-copyright">
-            <p>Разработано-</p>
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a><!-- разработано -->
-          </section>
-        </div>
+          <div class="social-copyright-content">
+            <p class="copyright">&copy; 2010-2016 Компания &laquo;Техномарт&raquo; Все права защищены</p>
+            <section class="footer-social">
+              <a class="social-btn social-btn-vk" href="#">В</a>
+              <a class="social-btn social-btn-fb" href="#">Ф</a>
+              <a class="social-btn social-btn-inst" href="#">И</a>
+            </section>
+            <section class="mail">
+              <p>Обратная связь:</p>
+              <a class="btn" href="">mail@htmlacademy.ru</a><!-- почта -->
+            </section>
+            <section class="author-copyright">
+              <p>Разработано-</p>
+              <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a><!-- разработано -->
+            </section>
+          </div>
+        </div> 
       </div>
     </footer>
   </body>
