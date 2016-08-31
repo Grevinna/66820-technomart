@@ -104,7 +104,26 @@
         <section class="filter">
           <b>Фильтр:</b>
           <h3>Цена</h3>
-          <!-- ползунок на основе чего делать? или там просто псевдо-выборку делаем? -->
+          
+          
+          <form action="form.php" method="GET">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                <label class="max-price">	&#8212;<input name="max-price" type="text" value="30000"></label>
+              </div>
+            </div>
+          <!-- другие элементы формы -->
+          </form>
+          
+          
           <h3>Производители</h3>
           <div class="manufacturer-item">
             <label>
