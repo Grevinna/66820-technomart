@@ -913,16 +913,40 @@ inner
 .filter {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  width: 220px;
   margin-right: 20px;
 }
 
+.filter b {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  padding: 15px 20px;
+  background-color: #f7f3ec;
+}
+
+.filter  h3{
+  font-size: 17px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+}
+
+.line {
+  border-bottom: 1px solid #f7f3ec;
+  margin-top: 20px;
+}
 
 /* range-filter */
 
 .range-filter {
   width: 220px;
-  margin: ; /* для демонстрации */
 }
 
 .range-controls {
@@ -942,9 +966,10 @@ inner
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 84%;
   height: 2px;
   background: #00ca74;
+  margin-left: 0%;
 }
 
 .range-controls .toggle {
@@ -975,7 +1000,6 @@ inner
 .price-controls label {
   font-size: 17px;
   display: inline-block;
-  width: %;
 }
 
 .min-price {
@@ -1003,24 +1027,30 @@ inner
   margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.manufacturer-item, .еnergy */
 
 .manufacturer-item, .еnergy {
   display: flex;
   flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.btn-filter input {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", sans-serif;
+  background-color: #ffffff;
+  margin-top: 50px;
 }
 
 /* .sorting */
@@ -1028,14 +1058,32 @@ inner
 .sorting {
   display: flex;
   flex-direction: column;
-  flex: 3;
+  width: 700px;
 }
 
 .sorting-tool {
   display: flex;
-  flex-direction: row;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  padding: 15px 20px;
+  background-color: #f7f3ec;
   margin-bottom: 10px;
-  background: #40E0D0;
+}
+
+.filter b {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  padding: 15px 20px;
+  background-color: #f7f3ec;
 }
 
 .sorting-goods-list {

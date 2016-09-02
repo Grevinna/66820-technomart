@@ -103,14 +103,12 @@
       <div class="inner-main-content">
         <section class="filter">
           <b>Фильтр:</b>
-          <h3>Цена</h3>
-          
-          
           <form action="form.php" method="GET">
+            <h3>Цена:</h3>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="margin-left: 0%; width: 80%"></div>
+                  <div class="bar"></div>
                 </div>
                 <div class="toggle toggle-min"></div>
                 <div class="toggle toggle-max"></div>
@@ -120,44 +118,50 @@
                 <label class="max-price">	&#8212;<input name="max-price" type="text" value="30000"></label>
               </div>
             </div>
-          <!-- другие элементы формы -->
+            <div class="line"></div>
+            <h3>Производители:</h3>
+            <div class="manufacturer-item">
+              <label>
+                <input type="checkbox"  value="Bosch" name="manufacturer-input" checked>Bosch
+                <span></span>
+              </label>
+              <label> 
+                <input type="checkbox" value="Интерскол" name="manufacturer-input">Интерскол
+                <span></span>
+              </label>
+              <label> 
+                <input type="checkbox" value="Makita" name="manufacturer-input" checked>Makita
+                <span></span>
+              </label>
+              <label> 
+                <input type="checkbox" value="Devalt" name="manufacturer-input">Devalt
+                <span></span>
+              </label>
+              <label> 
+                <input type="checkbox" value="Hitachi" name="manufacturer-input">Hitachi
+                <span></span>
+              </label>
+            </div>
+            <div class="line"></div>
+            <h3>Питание:</h3>
+            <div class="еnergy">
+              <label>
+                <input type="radio" value="battery" name="еnergy-battery" checked>Аккумуляторные
+                <span></span>
+              </label>
+              <label>
+                <input type="radio" value="network" name="еnergy-network">Сетевые
+                <span></span>
+              </label>
+            </div>
+            <div class="btn-filter">
+              <input type="submit" value="Показать">
+            </div>
           </form>
-          
-          
-          <h3>Производители</h3>
-          <div class="manufacturer-item">
-            <label>
-              <input type="checkbox" checked>BOSCH 
-            </label>
-            <label> 
-              <input type="checkbox">ИНТЕРСКОЛ
-            </label>
-            <label> 
-              <input type="checkbox" checked>MAKITA 
-            </label>
-            <label> 
-              <input type="checkbox">DEVALT
-            </label>
-            <label> 
-              <input type="checkbox">HITACHI
-            </label>
-          </div>
-          <h3>Питание</h3>
-          <div class="еnergy">
-            <label>
-              <input type="radio" value="еnergy-battery" name="battery" checked>Аккумуляторные
-            </label>
-            <label>
-              <input type="radio" value="еnergy-network" name="network">Сетевые
-            </label>
-          </div>
-        <div>
-          <a class="btn filter" href="#">Показать</a>
-        </div>
         </section> 
         <section class="sorting">
           <div class="sorting-tool">
-            <b>Сортировка</b><!-- не совсем понимаю через что это делать... чекбоксы, если только стилизованные -->
+            <b>Сортировка:</b><!-- не совсем понимаю через что это делать... чекбоксы, если только стилизованные -->
             <div class="sorting-item">
               <label>
                 <input type="checkbox">По цене
@@ -295,9 +299,9 @@
       <div class="switch-pages">
         <div class="pages">
           <a class="page">1</a>
-          <a class="page" href="#">2</a>
-          <a class="page" href="#">3</a>
-          <a class="page" href="#">Следующая</a>
+          <a class="page" href="#2">2</a>
+          <a class="page" href="#3">3</a>
+          <a class="page" href="#next">Следующая</a>
         </div>
       </div>
       <div class="on-product-pages">
