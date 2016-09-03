@@ -187,7 +187,7 @@ h2 {
   text-align: center;
 }
 
-.contacts-user a {
+.user-block a, .first-user-block a {
   display: block;
   text-decoration: none;
   font-size: 21px;
@@ -854,6 +854,50 @@ inner
 
 
 */
+
+/* .privat-user-block */
+
+.privat-user-block {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.user-name {
+  width: 300px;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+
+.user-name b {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 18px;
+  padding-left: 50px;
+  padding-top: 13px;
+}
+
+.orders-cabinet {
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 5px;
+}
+
+.orders-cabinet span {
+  font-weight: bolder;
+  color: #32425c;
+}
+
+.orders {
+  padding-left: 22px;
+  padding-right: 12px;
+}
+
+.cabinet {
+  padding-left: 17px;
+}
+
+/*.breadcrumbs*/
 
 .breadcrumbs ul{
   display: flex;
