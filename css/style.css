@@ -94,6 +94,25 @@ h2 {
   padding: 12px 0;
 }
 
+.search input {
+  color: #ffffff;
+  background-color: #293449;
+  border: none;
+   width: 275px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  vertical-align: top;
+  padding: 12px 0;
+  
+}
+
+.search input placeholder{
+  color: aliceblue;
+}
+
+
 .btn-panel {
   width: 150px;
   text-align: center;
@@ -858,9 +877,7 @@ inner
 /* .privat-user-block */
 
 .privat-user-block {
-  display: flex;
   width: 300px;
-  flex-wrap: wrap;
 }
 
 .user-name {
@@ -875,27 +892,30 @@ inner
   line-height: 18px;
   padding-left: 50px;
   padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .orders-cabinet {
   font-size: 16px;
   line-height: 18px;
   padding-top: 5px;
-}
-
-.orders-cabinet span {
-  font-weight: bolder;
-  color: #32425c;
-}
-
-.orders {
   padding-left: 22px;
-  padding-right: 12px;
+  color: #32425c;
+  margin: 0px;
 }
 
-.cabinet {
-  padding-left: 17px;
+.orders-cabinet li {
+  display: inline-block;
 }
+
+.orders-cabinet li:first-child::after {
+  content: "•";
+  font-weight: bolder;
+  margin-left: 12px;
+  margin-right: 17px;
+  text-decoration: none;
+}
+
 
 /*.breadcrumbs*/
 
