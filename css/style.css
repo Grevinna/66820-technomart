@@ -886,7 +886,7 @@ inner
   background: #f2f6f8;
   width: 940px;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .page-heading h2{
@@ -925,8 +925,9 @@ inner
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background-color: #f7f3ec;
+  font-weight: normal;
 }
 
 .filter  h3{
@@ -1039,6 +1040,15 @@ inner
   text-transform: uppercase;
 }
 
+.manufacturer-item label, .еnergy label {
+  padding-left: 35px;
+  padding-bottom: 20px;
+}
+
+.manufacturer-item input, .еnergy input {
+  display: none;
+}
+
 .btn-filter input {
   color: #000000;
   text-decoration: none;
@@ -1061,6 +1071,8 @@ inner
   width: 700px;
 }
 
+/* .sorting-tool */
+
 .sorting-tool {
   display: flex;
   font-size: 13px;
@@ -1069,22 +1081,61 @@ inner
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
-  padding: 15px 20px;
+  padding: 10px 20px 5px 20px;
   background-color: #f7f3ec;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.filter b {
-  display: inline-block;
-  font-size: 13px;
-  line-height: 18px;
-  text-align: left;
-  vertical-align: top;
-  text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
-  padding: 15px 20px;
-  background-color: #f7f3ec;
+.sorting-tool b {
+  margin-right: 140px;
+  font-weight: normal;
 }
+
+.sorting-tool .price { 
+  margin-right: 70px;
+}
+
+.sorting-tool .type {
+  margin-right: 65px;
+}
+
+.sorting-tool .functional {
+  margin-right: 45px;
+}
+
+.sorting-tool input {
+  display: none;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 0;
+  margin-top: 3px;
+}
+
+.arrow-up {
+  margin-right: 20px;
+}
+
+.arrow::before {
+  content: "";
+  display: inline-block;
+  border: 10px solid #ee3643;
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
+}
+
+/* .sorting-goods-list */
 
 .sorting-goods-list {
   display: flex;

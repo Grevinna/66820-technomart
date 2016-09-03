@@ -163,26 +163,18 @@
           <div class="sorting-tool">
             <b>Сортировка:</b><!-- не совсем понимаю через что это делать... чекбоксы, если только стилизованные -->
             <div class="sorting-item">
-              <label>
-                <input type="checkbox">По цене
+              <label class="price">
+                <input type="checkbox"  value="price" name="sorting-item">По цене
               </label>
-              <label> 
-                <input type="checkbox" checked>По типу
+              <label class="type"> 
+                <input type="checkbox"  value="type" name="sorting-item" checked>По типу
               </label>
-              <label> 
-                <input type="checkbox" checked>По функционалу
+              <label class="functional"> 
+                <input type="checkbox"  value="functional" name="sorting-item" checked>По функционалу
               </label>
             </div>
-            <div class="up-arrow">
-                <a href="#">
-                  <img src="img/index-logo.png" width="20" height="20" alt="По возрастанию"><!-- Стрелка вверх, не уверенна, что это так -->
-                </a> 
-            </div>
-            <div class="arrow to down">
-                <a href="#">
-                  <img src="img/index-logo.png" width="20" height="20" alt="Поубыванию"><!-- Стрелка вниз, не уверенна, что это так -->
-                </a> 
-            </div>
+            <a class="arrow arrow-up" href="#"></a>
+            <a class="arrow arrow-down" href="#"></a>
           </div>
           <div class="sorting-goods-list"> 
             <article class="goods-item new">
