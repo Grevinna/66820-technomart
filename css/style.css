@@ -1035,6 +1035,7 @@ inner
   opacity: 1;
 }
 
+/*
 .user-name::after {
   content: "";
   position: absolute;
@@ -1047,6 +1048,13 @@ inner
   height: 17px;
   background-position: -10px -504px;
   opacity: 1;
+}
+*/
+
+.user-name a {
+  position: absolute;
+  top: 35%;
+  left: 90%;
 }
 
 .user-name b {
@@ -1065,6 +1073,10 @@ inner
   padding-left: 22px;
   color: #32425c;
   margin: 0px;
+}
+
+.orders-cabinet a {
+  color: #32425c;
 }
 
 .orders-cabinet li {
@@ -1100,8 +1112,7 @@ inner
 }
 
 .breadcrumbs ul li:first-child {
-  margin-left: 13px;
-  font-size: 0; /*  скрывает текст */
+  margin-left: 0px;
 }
 
 .breadcrumbs ul li:nth-child(1)::after {
@@ -1136,27 +1147,13 @@ inner
   content: "";
   position: absolute;
   top: 50%;
-  left: 246px;
+  left: 247px;
   transform:translate(-50%, -50%);
   background-image: url("../img/sprite.breadcrumbs.png");
   background-repeat: no-repeat;
   width: 8px;
   height: 12px;
   background-position: -10px -42px;
-  opacity: 1;
-}
-
-.breadcrumbs ul li:first-child::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 6px;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.breadcrumbs.png");
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 12px;
-  background-position: -10px -10px;
   opacity: 1;
 }
 
