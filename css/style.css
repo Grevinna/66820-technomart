@@ -1435,7 +1435,7 @@ inner
   vertical-align: top;
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
-  padding: 10px 20px 5px 20px;
+  padding: 10px 0px 5px 20px;
   background-color: #f7f3ec;
   margin-bottom: 20px;
 }
@@ -1446,15 +1446,15 @@ inner
 }
 
 .sorting-tool .price { 
-  margin-right: 70px;
+  margin-right: 66px;
 }
 
 .sorting-tool .type {
-  margin-right: 65px;
+  margin-right: 62px;
 }
 
 .sorting-tool .functional {
-  margin-right: 45px;
+  margin-right: 47px;
 }
 
 .sorting-item input {
@@ -1471,10 +1471,11 @@ inner
   display: inline-block;
   font-size: 0;
   margin-top: 3px;
+  cursor:pointer;
 }
 
 .arrow-up + label {
-  margin-right: px;
+  margin-right: 18px;
 }
 
 .arrow + label::before {
@@ -1495,83 +1496,15 @@ inner
   border-bottom-width: 0;
 }
 
-c6c2bd
-
 .arrow:checked + label::before {
-  content: "";
-  display: inline-block;
-  border: 10px solid #ee3643;
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-right-color: transparent;
-  border-left-color: transparent;
+  border-top-color: #ee3643;
+  border-bottom-color: #ee3643;
 }
 
-
-
-/*
-.arrow-sorting {
-  display: none;
+.arrow + label:hover::before {
+  border-top-color: #272727;
+  border-bottom-color: #272727;
 }
-*/
-
-/*
-.arrow-sorting ul li{
-  display:inline-block;
-}
-
-.arrow-up + label::before {
-  
-}
-
-arrow-down + label::before {
-  
-}
-
-.arrow-up:checked  + label::before {
-  
-}
-
-arrow-down:checked  + label::before {
-  
-}
-*/
-
-/*
-
-.еnergy input[type="radio"] + label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  background-position: -10px -168px;
-  opacity: 1;
-} 
-
-.еnergy input[type="radio"]:checked + label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
-  background-position: -10px -213px;
-  opacity: 1;
-}
-
-*/
-
-
-
-
 
 /* .sorting-goods-list */
 
