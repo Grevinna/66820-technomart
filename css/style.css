@@ -964,7 +964,7 @@ li {
   width: 42px;
   height: 42px;
   margin: 0 2px;
-  font-size: 0;
+  font-size: 0; /*  скрывает текст */
   vertical-align: top;
   text-decoration: none;
   border-radius: 50%;
@@ -1083,6 +1083,7 @@ inner
 
 .breadcrumbs ul{
   display: flex;
+  position: relative;
   flex-direction: row;
   width: 940px;
   margin: auto;
@@ -1090,7 +1091,7 @@ inner
 }
 
 .breadcrumbs ul li {
-  margin: 17px 25px;
+  margin: 17px 20px;
   text-align: center;
   vertical-align: top;
   font-size: 13px;
@@ -1099,7 +1100,64 @@ inner
 }
 
 .breadcrumbs ul li:first-child {
-  margin-left: 0px;
+  margin-left: 13px;
+  font-size: 0; /*  скрывает текст */
+}
+
+.breadcrumbs ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.breadcrumbs.png");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  background-position: -10px -42px;
+  opacity: 1;
+}
+
+.breadcrumbs ul li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 127px;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.breadcrumbs.png");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  background-position: -10px -42px;
+  opacity: 1;
+}
+
+.breadcrumbs ul li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 246px;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.breadcrumbs.png");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 12px;
+  background-position: -10px -42px;
+  opacity: 1;
+}
+
+.breadcrumbs ul li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.breadcrumbs.png");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 12px;
+  background-position: -10px -10px;
+  opacity: 1;
 }
 
 .breadcrumbs ul li a{
@@ -1766,8 +1824,21 @@ inner
 }
 
 
+.sprite {
+    background-image: url(../img/sprite.breadcrumbs.png);
+    background-repeat: no-repeat;
+    display: block;
+}
 
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -10px -10px;
+}
 
-
-
+.sprite-icon-right-breadcrumbs {
+    width: 8px;
+    height: 12px;
+    background-position: -10px -42px;
+}
 
