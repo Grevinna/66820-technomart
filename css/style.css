@@ -1461,7 +1461,8 @@ inner
   display: none;
 }
 
-.arrow {
+/*
+.arrow{
   display: inline-block;
   font-size: 0;
   margin-top: 3px;
@@ -1488,6 +1489,47 @@ inner
 .arrow-down::before {
   border-bottom-width: 0;
 }
+*/
+
+
+
+
+
+/*
+
+.еnergy input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-position: -10px -168px;
+  opacity: 1;
+} 
+
+.еnergy input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-position: -10px -213px;
+  opacity: 1;
+}
+
+*/
+
+
+
+
 
 /* .sorting-goods-list */
 
