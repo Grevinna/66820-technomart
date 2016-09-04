@@ -202,10 +202,10 @@ h2 {
 .contacts-user {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 940px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .caption {
@@ -215,15 +215,18 @@ h2 {
   font-size: 16px;
   font-weight: normal;
   line-height: 23px;
-  margin: 5px 45px;
+  margin: 5px 50px;
 }
 
 .contacts {
   width: 270px;
-  margin:5px;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 
 .phone-number{
+  position: relative;
   color: #ee3643;
   border: 3px solid #ffffff;
   width: 182px;
@@ -232,6 +235,20 @@ h2 {
   font-size: 21px;
   line-height: 18px;
   font-weight: bolder;
+}
+
+.phone-number::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  background-position: -10px -541px;
+  opacity: 1;
 }
 
 .adress {
@@ -245,17 +262,17 @@ h2 {
 /* user-block */
 
 .user-block {
-  width: 111px;
+  width: 120px;
   height: 45px;
   background: #ffffff;
-  margin: 5px;
   text-align: center;
-  margin-right: -45px;
-  
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 5px;
 }
 
 .first-user-block {
-  width: 145px;
+  width: 150px;
   height: 45px;
   background: #ffffff;
   margin: 5px;
@@ -269,8 +286,7 @@ h2 {
   font-size: 21px;
   line-height: 18px;
   vertical-align: top;
-  padding: 10px;
-  padding-bottom: 18px;
+  padding: 14px 10px;
   color: #000000;
 }
 
@@ -278,8 +294,25 @@ h2 {
   padding-left: 30px;
 }
 
-/* main-navigation */
+.user-block {
+  position: relative;
+}
 
+.user-block::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 17px;
+  background-position: -10px -430px;
+  opacity: 1;
+}
+
+/* main-navigation */
 
 .list-main-navigation {
   display: flex;
@@ -975,9 +1008,38 @@ inner
 }
 
 .user-name {
+  position: relative;
   width: 300px;
   background-color: #ffffff;
   margin-top: 5px;
+}
+
+.user-name::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 9%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 18px;
+  background-position: -10px -752px;
+  opacity: 1;
+}
+
+.user-name::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 17px;
+  background-position: -10px -504px;
+  opacity: 1;
 }
 
 .user-name b {
