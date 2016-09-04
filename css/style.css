@@ -107,7 +107,7 @@ h2 {
 
 
 
-.search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.search input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
  color:#ffffff;
  opacity:1;
 }
