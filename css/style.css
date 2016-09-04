@@ -1457,7 +1457,7 @@ inner
   margin-right: 45px;
 }
 
-.sorting-tool input {
+.sorting-item input {
   display: none;
 }
 
@@ -1491,9 +1491,31 @@ inner
 }
 */
 
+/*
+.arrow-sorting {
+  display: none;
+}
+*/
 
+.arrow-sorting ul li{
+  display: inline-block;
+}
 
+.arrow-up + label::before {
+  
+}
 
+arrow-down + label::before {
+  
+}
+
+.arrow-up:checked  + label::before {
+  
+}
+
+arrow-down:checked  + label::before {
+  
+}
 
 /*
 
