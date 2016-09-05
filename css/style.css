@@ -511,14 +511,15 @@ h2 {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .features a:hover {
-  
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.features a:activ {
-  
+.features a:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -586,26 +587,6 @@ h2 {
 
 .delivery {
   background: #f6b22d;
-}
-
-.materials a {
-  background: #dda028;
-}
-
-.tool a {
-  background: #429dc7;
-}
-
-.equipment a {
-  background: #b76dbc;
-}
-
-.discounts a {
-  background: #77bc6d;
-}
-
-.delivery a {
-  background: #dda028;
 }
 
 .slider {
