@@ -124,6 +124,13 @@ h2 {
   border: none;
 }
 
+.btn-search img {
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  background-position: -10px -640px;
+  opacity: 0.3;
+}
 
 /*
 .btn-search::after {
