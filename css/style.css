@@ -149,6 +149,15 @@ h2 {
   background-position: -10px -677px;
   opacity:1;
 }
+/*
+
+.search:focus .btn-search::after{
+  width: 17px;
+  height: 17px;
+  background-position: -10px -677px;
+  opacity:1;
+}
+*/
 
 .search-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
  color:#ffffff;
@@ -1184,16 +1193,38 @@ inner
 
 .user-name a {
   position: absolute;
-  top: 35%;
-  left: 90%;
+  width: 45px;
+  height: 44px;
+  cursor:pointer;
+  right: 0px;
+  background-color: inherit;
+  border: none;
+}
+
+.user-name a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 17px;
+  background-position: -10px -504px;
+  opacity: 1;
 }
 
 .user-name a:hover::before {
-
+  width: 21px;
+  height: 17px;
+  background-position: -10px -467px;
 }
 
 .user-name a:active::before {
-
+  width: 21px;
+  height: 17px;
+  background-position: -10px -504px;
 }
 
 .user-name b {
