@@ -101,7 +101,7 @@ h2 {
   position: relative;
 }
 
-.search-field input[type="search"] {
+.search {
   color: #ffffff;
   background-color: #293449;
   border: none;
@@ -124,20 +124,11 @@ h2 {
   border: none;
 }
 
-.btn-search img {
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-  background-position: -10px -640px;
-  opacity: 0.3;
-}
-
-/*
 .btn-search::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -148,11 +139,16 @@ h2 {
 }
 
 
-.search-field:hover::before {
+.btn-search:hover::after{
   opacity:1;
 }
 
-*/
+.btn-search:active::after{
+  width: 17px;
+  height: 17px;
+  background-position: -10px -677px;
+  opacity:1;
+}
 
 .search-field input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
  color:#ffffff;
@@ -451,6 +447,17 @@ h2 {
   padding: 22px 31px;
 }
 
+.main-navigation a:hover {
+  background-color: #293449;
+  padding-bottom: 21px;
+}
+
+.main-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255,255,255,0.5);
+  padding-bottom: 21px;
+}
+
 /* index тело станицы*/
 /* container */
 
@@ -496,6 +503,15 @@ h2 {
   vertical-align: middle;
   text-transform: uppercase;
 }
+
+.features a:hover {
+  
+}
+
+.features a:activ {
+  
+}
+
 
 .features-item {
   position: relative;
