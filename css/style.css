@@ -398,6 +398,28 @@ h2 {
   opacity: 1;
 }
 
+.user-block a:hover, .first-user-block a:hover {
+  color: #ee3643;
+}
+
+.user-block a:active, .first-user-block a:active {
+  color: #b2b2b2;
+}
+
+.user-block:hover::before {
+  width: 20px;
+  height: 17px;
+  background-position: -10px -393px;
+  opacity: 1;
+}
+
+.user-block:active::before {
+  width: 20px;
+  height: 17px;
+  background-position: -10px -430px;
+  opacity: 1;
+}
+
 /* main-navigation */
 
 .list-main-navigation {
@@ -1121,26 +1143,41 @@ inner
   opacity: 1;
 }
 
-/*
-.user-name::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 92%;
-  transform:translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 17px;
-  background-position: -10px -504px;
+
+.user-name:hover {
+  color: #ee3643;
+}
+
+.user-name:active {
+  color: #b2b2b2;
+}
+
+.user-name:hover::before {
+  width: 20px;
+  height: 18px;
+  background-position: -10px -714px;
   opacity: 1;
 }
-*/
+
+.user-name:active::before {
+  width: 20px;
+  height: 18px;
+  background-position: -10px -752px;
+  opacity: 1;
+}
 
 .user-name a {
   position: absolute;
   top: 35%;
   left: 90%;
+}
+
+.user-name a:hover::before {
+
+}
+
+.user-name a:active::before {
+
 }
 
 .user-name b {
@@ -1164,6 +1201,15 @@ inner
 .orders-cabinet a {
   color: #32425c;
 }
+
+.orders-cabinet a:hover {
+  color: #ee4d59;
+}
+
+.orders-cabinet a:active {
+  color: #bec5ce;
+}
+
 
 .orders-cabinet li {
   display: inline-block;
