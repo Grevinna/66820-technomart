@@ -222,14 +222,6 @@ h2 {
   padding-bottom: 12px;
 }
 
-.btn-panel a:hover {
-  background: #242424;
-}
-
-.btn-panel a:active {
-  background: #000000;
-}
-
 .btn-bookmark {
   position: relative;
 }
@@ -264,6 +256,31 @@ h2 {
   height: 16px;
   background-position: -10px -10px;
   opacity: 0.3;
+}
+
+.btn-bookmark:hover::before, .btn-cart:hover::before {
+  opacity: 1;
+}
+
+.btn-bookmark:active::before, .btn-cart:active::before {
+  opacity: 0.5;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background: #5fbb2d;
+}
+
+.btn-order .order:active {
+  background: #518534;
+  opacity: 0.51;
 }
 
 /* contacts-user  */
