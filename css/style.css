@@ -932,6 +932,30 @@ h2 {
   color: #ffffff;
 }
 
+.about-technomart-company ul {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 0px;
+  padding-left: 35px;
+  margin-top: 0px;
+  margin-bottom:25px;
+}
+
+.transport-company {
+  position: relative;
+}
+
+.transport-company:before {
+  position: absolute;
+  content: "";
+  border-top: 2px solid #fb565a;
+  width: 25px;
+  top: 20px;
+  left: -35px;
+}
+
+
 
 /*footer*/
 
