@@ -883,13 +883,14 @@ h2 {
   line-height: 24px;
   text-align: left;
   vertical-align: top;
-  margin-top: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .container-btn-map {
   width: 300px;
   height: 158px;
-  margin: 40px 0px;
+  margin: 10px 0px 38px;
 }
 
 .btn-company-link {
@@ -933,13 +934,14 @@ h2 {
 }
 
 .about-technomart-company ul {
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 17px;
+  line-height: 39px;
   font-weight: bold;
   padding: 0px;
   padding-left: 35px;
-  margin-top: 0px;
-  margin-bottom:25px;
+  margin: 0px;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .transport-company {
@@ -954,8 +956,6 @@ h2 {
   top: 20px;
   left: -35px;
 }
-
-
 
 /*footer*/
 
