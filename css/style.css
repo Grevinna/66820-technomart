@@ -512,6 +512,7 @@ h2 {
   vertical-align: middle;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
 .features a:hover {
@@ -621,10 +622,6 @@ h2 {
   font-weight: normal;
 }
 
-.open-directory {
-
-}
-
 .open-directory a {
   position: absolute;
   left: 25px;
@@ -639,7 +636,18 @@ h2 {
   vertical-align: middle;
   text-transform: uppercase;
   background: #ee3643;
+  border-radius: 3px;
 }
+
+.open-directory a:hover {
+  background: #ca2c37;
+}
+
+
+.open-directory a:active {
+  background: #ba2732;
+}
+
 
 .features-item-after-the-slider {
   display: flex; 
@@ -747,8 +755,19 @@ h2 {
   justify-content: space-between;
 }
 
-.manufacturers-list-item{
+.manufacturers-list-item {
+ width: 220px;
+ height: 145px;
  margin-bottom: 20px;
+}
+
+.manufacturers-list-item:hover {
+ box-shadow: 0 5px 20px 0 #a9adb5;
+}
+
+.manufacturers-list-item:active {
+ box-shadow: 0 5px 10px 0 #adb1b9;
+ opacity: 0.3;
 }
 
 /*.services*/
@@ -810,6 +829,10 @@ h2 {
     0 -1px 0 0 #293449 inset;
   padding: 20px;
   padding-bottom: 23px;
+}
+
+.paper-btn label:hover {
+  background-color: #293449;
 }
 
 .paper-btn input:checked ~ label { 
@@ -1030,6 +1053,14 @@ footer .index-logo a {
   text-decoration: none;
 }
 
+.footer-navigation ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation ul a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
 
 .footer-navigation-goods ul {
   display: flex;
@@ -1042,6 +1073,14 @@ footer .index-logo a {
   text-decoration: none;
 }
 
+.footer-navigation-goods ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation-goods ul a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
 
 .footer-navigation ul li{
   margin-right: 60px;
@@ -1081,6 +1120,15 @@ li {
   text-decoration: none;
 }
 
+.social-copyright-content a:hover{ 
+  text-decoration: underline;
+}
+
+.social-copyright-content a:active {
+  color: #e13643;
+  text-decoration: none;
+}
+
 .footer-social {
   margin: 0px 10px;
   text-align: center;
@@ -1108,6 +1156,10 @@ li {
   border-radius: 50%;
   background-color: #212a3a;
 }
+
+.social-btn:hover, .social-btn:active {
+  background-color: #ee3643;
+} 
 
 .social-btn::before {
   content: "";
@@ -1171,11 +1223,6 @@ inner
   height: 18px;
   background-position: -10px -752px;
   opacity: 1;
-}
-
-
-.user-name:hover {
-  color: #ee3643;
 }
 
 .user-name:active {
@@ -1645,6 +1692,22 @@ inner
   display: none;
 }
 
+.sorting-item label {
+  cursor:pointer;
+  color: #b2b2b2;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-item label:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-item input:checked ~ label {
+  color: #ee3643;
+  border-bottom: 0px;
+}
+
 /* .arrow */
 
 .arrow{
@@ -1710,6 +1773,10 @@ inner
   margin-bottom: 20px;
 }
 
+.goods-item:hover {
+  box-shadow: 0 5px 20px 0 #a9adb5;
+}
+
 .new:before {
   position: absolute;
   top: -1px;
@@ -1743,19 +1810,60 @@ inner
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 3px;
-  background-color: #63a63e;
 }
 
 .actions .buy {
+  background-color: #63a63e;
   box-shadow: inset 0 -3px 0 #367315;
+  position: relative;
+}
+
+.actions .buy:hover {
+  background-color: #5fbb2d;
+  box-shadow: inset 0 -3px 0 #367315;
+}
+
+.actions .buy:active {
+  background-color: #518534;
+  box-shadow: inset 0 -3px 0 #518534;
+}
+
+.actions .buy::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform:translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 16px;
+  background-position: -10px -10px;
+  opacity: 0.3;
+}
+
+.actions .buy:hover::before, .btn-cart:hover::before {
+  opacity: 1;
+}
+
+.actions .buy:active::before, .btn-cart:hover::before {
+  opacity: 1;
 }
 
 .actions .bookmark {
   width: 129px;
   padding: 7px 0;
-  color: #63a63e;
+  color: #32425c;
   border: 3px solid #63a63e;
   background-color: #ffffff;
+}
+
+.actions .bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.actions .bookmark:active {
+  opacity: 0.3; 
 }
 
 .goods-item .actions {
@@ -1810,7 +1918,7 @@ inner
   width: 0;
   height: 0;
   content: "";
-  border: 19px solid #fff;
+  border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
 
@@ -1850,6 +1958,14 @@ inner
 
 .pages a:last-child {
   padding: 10px 30px;
+}
+
+.pages a:hover {
+ border: 1px solid #bdc6ca;
+}
+
+.pages a:active {
+  border: 1px solid #ee3643;
 }
 
  /* .on-product-pages */
