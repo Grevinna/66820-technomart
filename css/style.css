@@ -692,6 +692,7 @@ h2 {
   vertical-align: top;
   text-transform: uppercase;
   background: #ee3643;
+  border-radius: 2px;
   padding: 11px;
   color: #ffffff;
 }
@@ -745,6 +746,7 @@ h2 {
   vertical-align: top;
   text-transform: uppercase;
   background: #ee3643;
+  border-radius: 2px;
   padding: 11px;
   color: #ffffff;
 }
@@ -782,18 +784,16 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-  background: url("../img/truck.png") no-repeat;
-  background-position: right bottom;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .services-slogan {
   display: flex;
   flex-direction: column;
   width: 400px;
-  margin-top: 45px; 
-  margin-bottom: 65px;
+  margin-top: 65px; 
+  margin-bottom: 70px;
 }
 
 .about-services {
@@ -804,12 +804,14 @@ h2 {
 .paper-btn-selector {
   position: relative;
   width: 240px;
+  padding-bottom: 100px;
+  
 }
 
 .vertical-shadow {
   position: absolute;
   left: 240px;
-  top: -25px
+  top: -45px
 }
 
 .paper-btn input {
@@ -827,15 +829,16 @@ h2 {
   box-shadow:
     0 1px 0 0 #405069 inset,
     0 -1px 0 0 #293449 inset;
-  padding: 20px;
-  padding-bottom: 23px;
+  padding: 16px 20px;
 }
 
 .paper-btn label:hover {
   background-color: #293449;
 }
 
-.paper-btn input:checked ~ label { 
+.paper-btn #yes-delivery:checked ~ label[for="yes-delivery"],
+.paper-btn #yes-guarantee:checked ~ label[for="yes-guarantee"],
+.paper-btn #yes-credit:checked ~ label[for="yes-credit"] { 
   color:#32425c;
   background-color: #ffffff;
   box-shadow:
@@ -844,15 +847,50 @@ h2 {
 }
 
 .services-content-slogan {
-  display: flex;
-  flex-direction: column;
-  width: 268px;
+  display: none;
+  width: 620px;
+  height: 282px;
   margin-left: 80px;
+}
+
+#yes-delivery:checked ~ .services-slider-slogan .services-content-slogan:nth-child(1) {
+  display: block;
+}
+
+#yes-guarantee:checked ~ .services-slider-slogan .services-content-slogan:nth-child(2) {
+  display: block;
+}
+
+#yes-credit:checked ~ .services-slider-slogan .services-content-slogan:nth-child(3) {
+  display: block;
+}
+
+.services-content-slogan:nth-child(1) {
+  background: url("../img/truck.png") no-repeat;
+  background-position: right bottom;
+}
+
+.services-content-slogan:nth-child(2) {
+  background: url("../img/guarantee.png") no-repeat;
+  background-position: right bottom;
+}
+
+.services-content-slogan:nth-child(3) {
+  background: url("../img/credit.png") no-repeat;
+  background-position: right bottom;
+}
+
+.delivery-slogan {
+  width: 268px;
+}
+
+.guarantee-slogan {
+  width: 370px;
 }
 
 .services h2 {
   font-size: 30px;
-  line-height: 24px;
+  line-height: 32px;
   text-align: left;
   vertical-align: top;
   text-transform: uppercase;
@@ -860,6 +898,8 @@ h2 {
 }
 
 .services .services-content-slogan h2 {
+  font-size: 34px;
+  line-height: 32px;
   color: #32425c;
 }
 
@@ -869,6 +909,24 @@ h2 {
   text-align: left;
   vertical-align: top;
   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.btn-send-a-request {
+  width: 170px;
+  height: 20px;
+  display: block;
+  text-decoration: none; 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: uppercase;
+  background: #ee3643;
+  border-radius: 2px;
+  padding: 10px;
+  color: #ffffff;
+  margin-top: 30px;
 }
 
 /*.technomart-company*/
@@ -932,6 +990,7 @@ h2 {
   vertical-align: top;
   text-transform: uppercase;
   background: #ee3643;
+  border-radius: 2px;
   padding: 11px;
   color: #ffffff;
 }
@@ -952,6 +1011,7 @@ h2 {
   vertical-align: top;
   text-transform: uppercase;
   background: #ee3643;
+  border-radius: 2px;
   padding: 11px;
   color: #ffffff;
 }
