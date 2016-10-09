@@ -335,7 +335,7 @@ https://yandex.ru/maps/?um=constructor:JsWpV81YtxzrMXtWaOqxJQ2hhHnPTRUh&amp;sour
             <a class="btn-map" href="#"><img src="img/map.png" width="300" height="158" alt=""></a>
           </div>
           <div class="btn-mail-link">
-            <a class="btn mail" href="#">Заблудились? Напишите нам!</a>
+            <a class="btn-mail" href="#">Заблудились? Напишите нам!</a>
           </div>
           <div class="modal-content modal-content-mail">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -346,7 +346,7 @@ https://yandex.ru/maps/?um=constructor:JsWpV81YtxzrMXtWaOqxJQ2hhHnPTRUh&amp;sour
               </label>
               <label>
                 Ваш e-mail:
-                <input class="user" type="text" name="login" placeholder="Для отправки ответа">
+                <input class="user" type="text" name="e-mail" placeholder="Для отправки ответа">
               </label>
               <label>
                 Текст письма:
@@ -430,5 +430,55 @@ https://yandex.ru/maps/?um=constructor:JsWpV81YtxzrMXtWaOqxJQ2hhHnPTRUh&amp;sour
         </div> 
       </div>
     </footer>
+    <script>
+      var link = document.querySelector(".btn-mail");
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+//
+//      var form = popup.querySelector("form");
+//      var login = popup.querySelector("[name=login]");
+//      var e-mail = popup.querySelector("[name=e-mail]");
+//
+//      var storage = localStorage.getItem("btn-mail");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+//        if (storage) {
+//          btn-mail.value = storage;
+//          e-mail.focus();
+//        } else {
+//          btn-mail.focus();
+//        }
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+//
+//      form.addEventListener("submit", function(event) {
+//        if (!login.value || !password.value) {
+//          event.preventDefault();
+//          popup.classList.remove("modal-error");
+//          popup.offsetWidth = popup.offsetWidth;
+//          popup.classList.add("modal-error");
+//        } else {
+//          localStorage.setItem("login", login.value);
+//        }
+//      });
+//
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
